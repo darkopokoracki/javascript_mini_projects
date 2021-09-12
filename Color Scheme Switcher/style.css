@@ -1,0 +1,59 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding-top: 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.colors {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.color {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.color1 {
+    background: #f16a70;
+}
+
+.color2 {
+    background: #b1d877;
+}
+
+.color3 {
+    background: #8cdcda;
+}
+
+.color4 {
+    background: #4d4d4d;
+}
