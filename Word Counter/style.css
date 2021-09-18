@@ -1,0 +1,86 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #F9F9F9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    padding: 2rem 0;
+    color: #20262E;
+    font-size: 2.5rem;
+}
+
+p {
+    color: #434B58;
+    font-size: 2.5rem;
+}
+
+.word-form {
+    margin: 2rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.word-form input {
+    padding: 1rem;
+    border: none;
+    background: #434B58;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.word-form input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+}
+
+.check-form {
+    display: flex;
+    justify-content: center;
+    color: #20262E;
+    font-size: 1.125rem;
+}
+
+.check-form input {
+    margin-right: .5rem;
+}
+
+label[for=space] {
+    margin-right: 2rem;
+}
+
+label[for=word] {
+    margin-bottom: .5rem;
+    font-size: 1.125rem;
+    color: #20262E;
+}
+
+button {
+    margin: 4rem 0 4rem 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    background: #FBC84F;
+    color: #20262E;
+    padding: 1rem;
+    cursor: pointer;
+}
