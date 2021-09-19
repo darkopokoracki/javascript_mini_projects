@@ -40,7 +40,7 @@ p {
     padding: 1rem;
     border: none;
     background: #434B58;
-    color: white;
+    color: #F9F9F9;
     font-size: 1.5rem;
     border-radius: 10px;
 }
@@ -50,7 +50,7 @@ p {
 }
 
 ::placeholder {
-    color: white;
+    color: #F9F9F9;
 }
 
 .check-form {
@@ -84,3 +84,34 @@ button {
     padding: 1rem;
     cursor: pointer;
 }
+
+.alert {
+    margin-top: 3rem;
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: #F9F9F9;
+    font-size: 1.125rem;
+    margin-bottom: 15px;
+    width: 60%;
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: #F9F9F9;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: #20262E;
+  }
+
+  .d_none {
+      display: none;
+  }
