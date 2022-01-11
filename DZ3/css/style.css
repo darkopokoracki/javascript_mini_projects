@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+
+#film-table {
+    margin-top: 4rem;
+}
+
+.greska {
+    color: red;
+    font-weight: bold;
+}
+
+.d_none {
+    display: none;
+}
+
+.tajmer-validacija {
+    margin-bottom: 2rem;
+}
+
+.tajmer-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 2rem; */
+}
+
+.selektuj_red {
+    background-color: lightgray;
+}
+
+tr:not(:first-child) {
+    cursor: pointer;
+}
+
+label {
+    font-size: 1.125rem;
+}
+
+input {
+    width: 40%;
+}
+
+input#odgovor-button {
+    width: 20%;
+}
+
+input#rezultat {
+    margin-top: 1rem;
+    width: 10%
+}
+
+.izraz span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
