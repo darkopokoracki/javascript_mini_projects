@@ -14,6 +14,7 @@ class Film {
 var myTimer;
 var isTimer = false;
 
+
 function main() {
     let film1 = new Film(1, "The Harder They Fall", "akcija", "The Bullitts", "Idris Elba", 6.6, 2021);
     let film2 = new Film(2, "Shaun of the Dead", "komedija", "Edgar Wright", "Nick Frost", 7.9, 2004);
@@ -38,7 +39,7 @@ function main() {
 function napraviTabelu() {
     const container = document.querySelector('.container');
     let table = document.createElement('table');
-    table.className = 'table';
+    table.className = 'table'; // Klasa za bootstrap
     table.setAttribute('border', '1');
     let tr = document.createElement('tr');
     
@@ -76,6 +77,9 @@ function popuniTabelu(filmovi) {
 
         for (let j = 0; j < values.length; j++) {
             let td = document.createElement('td');
+            
+            // Ideja je da svaka kolona u svakom redu dobije ime klase po kljucu objekta,
+            // Moci cu da dohvatim sve id-jeve zato sto svaka kolona koja sadrzi id ima klasu id
             td.className = `${Object.keys(filmovi[i])[j]}`;
             td.innerText = `${values[j]}`;
             td.style.textAlign = 'center';
@@ -241,7 +245,7 @@ function tajmerValidacija() {
 
 
     let odgovorButton = document.getElementById('odgovor-button');
-    let x = odgovorButton.addEventListener('click', proveriResenje);
+    // let x = odgovorButton.addEventListener('click', proveriResenje);
     
     if (isTimer == false) {
         myTimer = setInterval(() => {
@@ -332,6 +336,7 @@ function dodajNoviFilm() {
         td.style.textAlign = 'center';
         td.style.padding = '.35rem 0';
         tr.appendChild(td);
+        tr.addEventListener('click', selektujRed);
     }
 
     table.appendChild(tr);
