@@ -6,6 +6,27 @@ function main() {
     }
 }
 
+function dodajRed(e) {
+    let id = document.getElementById('id');
+    let naziv = document.getElementById('naziv');
+    let zanr = document.getElementById('zanr');
+    let godiste = document.getElementById('godiste');
+    let imdb = document.getElementById('imdb');
+
+    let tabela = document.querySelector('table');
+    let tr = document.createElement('tr');
+
+    let vrednosti = [id.value, naziv.value, zanr.value, godiste.value, imdb.value];
+
+    for (let i = 0; i < 5; i++) {
+        let td = document.createElement('td');
+        td.innerHTML = vrednosti[i];
+        tr.appendChild(td)
+    }
+
+    tabela.appendChild(tr);
+}
+
 function sortirajTabelu(e) {
     let meta = e.target.id;
     // let redovi = document.querySelectorAll('tr:not(:first-child)');
